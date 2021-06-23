@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #181719;
 }
 
 section {
@@ -23,6 +28,18 @@ section {
   background-repeat: no-repeat;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 138px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  background: #181719;
+  left: 57px;
+  top: 437px;
+}
+
 .card-photo {
   width: 37px;
   height: 37px;
@@ -30,25 +47,84 @@ section {
 
 .card-photo img {
   width: 100%;
+  border-radius: 37px
+}
+
+.card-header {
+  display: flex;
+  padding: 20px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
-nav a {
-  border: 1px solid black;
+.logo {
+  border: 1px solid #FFFFFF;
   margin: 15px;
   padding: 8px;
+  text-decoration: none;
+  font-family: 'Crimson Pro', serif;
+  text-transform: uppercase;
 }
 
 .dev {
   text-align: center;
+  margin-top: 145px;
+  margin-bottom: 24px;
 }
 
 section p {
   width: 250px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: start;
 }
 
-/*usar ::after para la flecha*/
+.hamburger {
+  background: transparent;
+  border: none;
+  margin: 10px;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.arrow-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.occupation {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: #828282;
+}
+
+.card-title h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 18px;
+  width: 210px;
+  margin-left: 20px;
+}
+
+.personal-info {
+  margin-left: 14px;
+  margin-top: 5px
+}
