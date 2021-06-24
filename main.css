@@ -17,8 +17,7 @@ section {
 }
 
 .main-img {
-  width: 351px;
-  height: 264px;
+  width: 350px;
 }
 
 .main-img img {
@@ -74,6 +73,10 @@ nav {
   text-align: center;
   margin-top: 145px;
   margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #A9A9A9;
 }
 
 section p {
@@ -89,6 +92,8 @@ section p {
   background: transparent;
   border: none;
   margin: 10px;
+  z-index: 100;
+  cursor: pointer;
 }
 
 header h1 {
@@ -140,3 +145,51 @@ header h1 {
   left: 110px;
   top: 289px
 }
+
+.xIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #181719;
+  color: #FFFFFF;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  list-style: none;
+  z-index: 100;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.menuLink {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.menu li {
+  margin-bottom: 32px;
+}
+
+.home {
+  font-weight: 700;
+  border-bottom: 2px solid #FFFFFF;
+}
+/*poner em query foto al lado de header y despues clamp*/
